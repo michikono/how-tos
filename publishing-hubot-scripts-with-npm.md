@@ -2,11 +2,11 @@
 
 ## Register with npm
 
-create account at npmjs.com
+create account at npmjs.com (https://www.npmjs.com/signup) then run the following commands:
 
 ```bash
 npm set init.author.name "Michi Kono"
-npm set init.author.email "michikono@gmail.com.com"
+npm set init.author.email "michikono@gmail.com"
 npm set init.author.url "https://github.com/michikono"
 npm adduser
 ```
