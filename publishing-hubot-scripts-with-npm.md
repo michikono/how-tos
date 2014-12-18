@@ -104,7 +104,7 @@ Commit everything.
 cd /path/to/your-project
 npm init
 npm publish ./
-
+```
 
 ## Adding it to a bot
 
