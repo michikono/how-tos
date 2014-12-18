@@ -77,6 +77,43 @@ describe '[script name]', ->
     true
 ```
 
+### Create command scripts
+
+Create `script/bootstrap`:
+
+```bash
+#!/bin/bash
+
+# Make sure everything is development forever
+export NODE_ENV=development
+
+# Load environment specific environment variables
+if [ -f .env ]; then
+  source .env
+fi
+
+if [ -f .env.${NODE_ENV} ]; then
+  source .env.${NODE_ENV}
+fi
+
+npm install
+
+# Make sure coffee and mocha are on the path
+export PATH="node_modules/.bin:$PATH"
+```
+
+Create `script/test`:
+
+```bash
+#!/bin/bash
+
+# bootstrap environment
+source script/bootstrap
+
+mocha --compilers coffee:coffee-script
+```
+
+Make both files executable `chmod +x script/*`
 
 ### Make sure it works by running these commands
 
@@ -122,7 +159,7 @@ Add the script into your `external-scripts.json` file:
 ]
 ```
 
-You can also submit your script to https://github.com/hubot-scripts/packages
+You can also submit your script to https://github.com/hubot-scripts/packages (appears here: https://github.com/hubot-scripts )
 
 If you do this, your users will be able use your script WITHOUT `npm install` and instead place its name inside
 `hubot-scripts.json`. For example:
