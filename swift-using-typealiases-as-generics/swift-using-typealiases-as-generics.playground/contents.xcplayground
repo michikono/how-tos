@@ -1,0 +1,15 @@
+<?xml version="1.0" encoding="UTF-8" standalone="yes"?>
+<playground version='6.0' target-platform='ios' requires-full-environment='true' display-mode='rendered'>
+    <pages>
+        <page name='0-0-start'/>
+        <page name='1-0-inferred-typealiases'/>
+        <page name='1-1-inferred-typealiases'/>
+        <page name='1-2-inferred-typealiases'/>
+        <page name='2-0-typealiases-for-self'/>
+        <page name='3-0-inheritance-and-generics'/>
+        <page name='3-1-inheritance-and-generics'/>
+        <page name='4-0-constraining-generics-using-where'/>
+        <page name='5-0-implementing-patterns'/>
+        <page name='5-1-implementing-patterns'/>
+    </pages>
+</playground>
