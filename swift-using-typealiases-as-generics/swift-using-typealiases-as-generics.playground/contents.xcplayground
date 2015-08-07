@@ -6,6 +6,7 @@
         <page name='1-1-inferred-typealiases'/>
         <page name='1-2-inferred-typealiases'/>
         <page name='2-0-typealiases-for-self'/>
+        <page name='2-1-typealiases-for-self'/>
         <page name='3-0-inheritance-and-generics'/>
         <page name='3-1-inheritance-and-generics'/>
         <page name='4-0-constraining-generics-using-where'/>
